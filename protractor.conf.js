@@ -4,6 +4,9 @@ feature files and step definitions with protractor.
 **/
 exports.config = {
   capabilities: {
+
+   //ignoreSynchronization: true,
+
     browserName: 'chrome',
     /**
      * If this is set to be true, specs will be sharded by file (i.e. all
