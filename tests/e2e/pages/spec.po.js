@@ -10,7 +10,6 @@ module.exports = {
 
   },
   get: (string) => {
-    console.log(browser.getSession().value_.id_);
     return browser.get(string);
   },
   setName: (name) => {
