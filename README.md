@@ -1,5 +1,9 @@
 ## Test e2e
 
+Este respositório foi criado no intuito de auxiliar o post no medium:
+
+[Automação com Protractor, PageObject e Cucumber](https://medium.com/@tuliobluz/automa%C3%A7%C3%A3o-com-protractor-pageobject-e-cucumber-122537179ab7)
+
 ### Pré Requisitos
 
 - Ter o Node.js instalado
