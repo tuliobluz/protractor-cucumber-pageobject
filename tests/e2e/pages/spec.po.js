@@ -1,15 +1,22 @@
-let SpecPage = function () {
-  let nameInput = element(by.model('yourName')),
+'use strict';
+
+let nameInput,
+  greeting;
+
+module.exports = {
+  init: () => {
+    nameInput = element(by.model('yourName'));
     greeting = element(by.binding('yourName'));
 
-  this.get = function (string) {
-    browser.get(string);
-  };
-  this.setName = function (name) {
-    nameInput.sendKeys(name);
-  };
-  this.getGreetingText = function () {
+  },
+  get: (string) => {
+    console.log(browser.getSession().value_.id_);
+    return browser.get(string);
+  },
+  setName: (name) => {
+    return nameInput.sendKeys(name);
+  },
+  getGreetingText: () => {
     return greeting.getText();
-  };
-};
-module.exports = new SpecPage();
+  }
+}

@@ -21,7 +21,7 @@ exports.config = {
    * stabilize between tasks.
    */
   allScriptsTimeout: 10000,
-  baseUrl:'https://angularjs.org/',
+  baseUrl:'https://angularjs.org',
  /**
    * Test framework to use. This may be one of: jasmine, mocha or custom.
    * Default value is 'jasmine'
@@ -92,9 +92,10 @@ exports.config = {
    */
   onPrepare: function () {
     browser.manage().window().maximize(); // maximize the browser before executing the feature files
-    const {Given, Then, When} = require('cucumber');
+    const {Given, Then, When, Before} = require('cucumber');
     global.Given = Given;
     global.When = When;
     global.Then = Then;
+    global.Before = Before;
   }
 };
