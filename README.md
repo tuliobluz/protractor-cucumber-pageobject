@@ -1,28 +1,28 @@
 ## Test e2e
 
-Este respositório foi criado no intuito de auxiliar o post no medium:
+This repository was created to help in this guide:
 
-[Automação com Protractor, PageObject e Cucumber](https://medium.com/@tuliobluz/automa%C3%A7%C3%A3o-com-protractor-pageobject-e-cucumber-122537179ab7)
+[Automation with Protractor, PageObject and Cucumber](https://medium.com/@tuliobluz/automa%C3%A7%C3%A3o-com-protractor-pageobject-e-cucumber-122537179ab7)
 
-### Pré Requisitos
+### Requirement
 
-- Ter o Node.js instalado
+- Node.js installed
 
-### Instalação
+### To set up
 
-- Executar o ```npm install```
+- Run ```npm install``` to install dependencies
 
-### Tecnologias utilizadas
+### Technologies used
 
-Foram utilizadas as seguintes tecnologias utilizadas:
+I used the technologies below:
 
 * [Protractor](https://www.protractortest.org/#/)
 * [Page Objects](https://www.protractortest.org/#/page-objects)
 * [CucumberJS](https://github.com/cucumber/cucumber-js)
 
-### Executando os testes
+### Running tests
 
-- Iniciar o servidor: ```webdriver-manager start```
+- Don't forget that to start the server: ```webdriver-manager start```
 
-- Executar ```protractor protractor.conf.js```
+- Run ```protractor protractor.conf.js```
  
