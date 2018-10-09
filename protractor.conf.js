@@ -55,6 +55,7 @@ exports.config = {
   // cucumber command line options
   cucumberOpts: {
     require: [
+      './node_modules/protractor-cucumber-steps/index.js',
       './tests/e2e/specs/*.js', 
     ],  // require step definition files before executing features
     tags: [],                      // <string[]> (expression) only execute the features or scenarios with tags matching the expression

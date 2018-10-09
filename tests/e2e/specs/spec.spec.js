@@ -11,15 +11,15 @@ Before(function(){
     specPage.init();
 })
 
-Given('The user go to {string}', function (string) {
-    specPage.get(string);
+// Given('The user go to {string}', function (string) {
+//     specPage.get(string);
+// });
+
+When('I add {string} in the name field', async function (string) {
+    await specPage.setName(string);
 });
 
-When('The user adds {string} in the name field', function (string) {
-    specPage.setName(string);
-});
-
-Then('The user should see Hello with the username', function () {
-    expect(specPage.getGreetingText())
-        .to.eventually.equal('Hello Tulio!')
+Then('I should see Hello with the username', async function () {
+    await expect(specPage.getGreetingText())
+        .to.eventually.equal('Hello Tulios!')
 });
