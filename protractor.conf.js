@@ -91,7 +91,6 @@ exports.config = {
    *    });
    */
   onPrepare: function () {
-    browser.manage().window().maximize(); // maximize the browser before executing the feature files
     const {Given, Then, When, Before} = require('cucumber');
     global.Given = Given;
     global.When = When;
